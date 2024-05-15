@@ -1,6 +1,26 @@
 .gridcontainer{
+    margin: 0 auto;
+
+}
+
+.row{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    gap:3px;
+    /* width: 100%; */
+    /* border-color: gray; */
+    /* border: 1px; */
+    margin-bottom: 3px;
+}
+
+.grid{
+    background-color: lightgray;
+    padding: 1rem 0;
+    flex:1;
+    
+    
+    
+
+   
+
 
 }
