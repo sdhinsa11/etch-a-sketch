@@ -1,26 +1,24 @@
 .gridcontainer{
-    margin: 0 auto;
+    margin: auto;
+    /* padding-top: 0px;; */
+    margin-top: 50px;
+    width: 700px;
+    height: 500px;
+    
 
 }
 
 .row{
     display: flex;
     gap:3px;
-    /* width: 100%; */
-    /* border-color: gray; */
-    /* border: 1px; */
-    margin-bottom: 3px;
+    margin-top: 3px;
 }
 
 .grid{
+    
     background-color: lightgray;
+    width: 1px;
     padding: 1rem 0;
     flex:1;
-    
-    
-    
-
-   
-
 
 }
