@@ -56,5 +56,38 @@ gc.forEach(cell => {
 });
 
 
+//Change Grid Size by button 
+const name = document.querySelector('.button');
+
+function changeGrid(){
+    new_size = prompt("Enter a new grid size less than 100: ");
+    gridContainer.innerHTML = ''
+    for(let i = 0; i < new_size; i++){
+        const row_div = document.createElement("div");
+        row_div.classList.add("row");
+    
+        for (let j = 0; j < new_size; j++)
+        {
+            const col_div = document.createElement("div");
+            col_div.classList.add("grid");
+            row_div.appendChild(col_div);
+        }
+        gridContainer.append(row_div);
+    }
+
+    const gc = document.querySelectorAll('.grid');
+    gc.forEach(cell => {
+
+        cell.addEventListener('mouseover', ()=>{
+            cell.style.backgroundColor = generateNewColor();
+        });
+        cell.addEventListener('mouseout', () => {
+            setTimeout(() => {
+                cell.style.backgroundColor='';
+            },500);
+        });
+    });
+}
+
 
 

@@ -5,8 +5,8 @@ body{
 .gridcontainer{
     margin: auto;
     /* padding-top: 0px;; */
-    margin-top: 50px;
-    width: 700px;
+    margin-top:30px;
+    width: 960px;
     height: 500px;
     
 
@@ -27,6 +27,28 @@ body{
     /* transition: background-color 0.3s ease; */ /* move over smoothly */
 }
 
+
+.buttoncontainer{
+    display: flex;
+    justify-content: center;
+
+}
+.button{
+    background-color: #ffd0d7;
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 4cqw;
+    font-size: 15px;
+}
+
+
+.main{
+    /* display: flex; */
+    margin-top: 40px;
+}
 
 
 
